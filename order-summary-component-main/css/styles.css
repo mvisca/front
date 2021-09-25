@@ -1,0 +1,160 @@
+:root {
+  --bold: 900;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --dark-violet: hsl(260, 44%, 32%);
+
+  --small-border: 0.75em;
+  --large-border: 1.5em;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+/* }
+
+.under__body {
+  position: relative; */
+  background-color: var(--very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-image: url('../images/pattern-background-desktop.svg'); */
+  /* width: auto;
+  overflow: hidden;
+  background-repeat: no-repeat; */
+}
+
+/* body::before {
+  content: "";
+  top: 10rem;
+} */
+
+.under__body{
+  margin: auto;
+}
+
+.br {
+  border: red 1px solid;
+}
+
+.bg {
+  border: green 1px solid;
+}
+
+.bb {
+  border: blue 1px solid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  border-radius: var(--large-border);
+  overflow: hidden;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: white;
+  margin: 1em;
+}
+
+.card__image {
+}
+
+.card__content {
+  padding: 3rem;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.5em;
+  font-weight: var(--bold);
+}
+
+.card__description {
+  margin: 1em;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  line-height: 1.5rem;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  padding: 1.5em;
+  background-color: var(--very-pale-blue);
+  border-radius: var(--small-border);
+  margin: 1em 0;
+}
+
+.card__item__content {
+  flex-direction: column;
+}
+
+.card__item__content p {
+  margin: 0;
+}
+
+.card__item__title {
+  font-weight: var(--bold);
+}
+
+.card__item__description {
+  color: var(--desaturated-blue);
+}
+
+.card__item__icon {
+  margin-right: 1em;
+}
+
+.card__item__action {
+  text-decoration: none;
+  color: var(--bright-blue);
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: right;
+  width: 100%;
+  font-weight: 400;
+}
+
+.card__item__action:hover {
+  text-decoration: underline;
+}
+
+.card__button {
+  margin: 1em 0;
+  width: 100%;
+  border-radius: var(--small-border);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+}
+
+.primary {
+  font-weight: 700;
+  color: var(--very-pale-blue);
+  background-color: var(--bright-blue);
+  transition: 0.125s;
+}
+
+.secondary {
+  background-color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 0.85em;
+}
+
+.primary:hover {
+  font-weight: 700;
+  background-color: var(--dark-violet);
+  transition: 0.125s;
+}
+

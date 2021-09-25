@@ -1,0 +1,55 @@
+:root {
+  --magenta: hsl(295, 72%, 69%);
+  --dark-magenta: hsla(295, 33%, 47%, 0.5);
+  --cyan: hsl(185, 87%, 64%);
+  --dark-cyan: hsla(185, 52%, 39%, 0.5);
+  --clear-color: hsl(0, 0%, 87%);
+  --dark-color: hsl(0, 0%, 31%);
+
+  --small-unit: 0.75rem;
+  --large-unit: 1.5rem;
+
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+
+}
+
+.yes {
+  background-color:var(--dark-magenta);
+}
+
+
+
+.bc[aria-color="red"] {
+  border: 1px solid red;
+}
+
+.bc[aria-color="green"] {
+  border: 1px solid green;
+}
+
+.bc[aria-color="blue"] {
+  border: 1px solid blue;
+}
+
+.bc[aria-color="none"] {
+  color: var(--cyan);
+  overflow: visible;
+  border: 1px orange dashed;
+
+}
+
+.bc[aria-color="none"]::after {
+  content: "\bI'm last! And this is another hex char::> \22\b<:: hex char. ";
+  color: black;
+  border: 1px orange dashed;
+}
+
+.bc[aria-color="none"]::before {
+  content: "Im first! And this is an arroba ::> \40\b<:: hex char.\b";
+  color: black;
+}
