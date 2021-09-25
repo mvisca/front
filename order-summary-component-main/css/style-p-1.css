@@ -22,8 +22,6 @@ body {
   background-color:var(--dark-magenta);
 }
 
-
-
 .bc[aria-color="red"] {
   border: 1px solid red;
 }
